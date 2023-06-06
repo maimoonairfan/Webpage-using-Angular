@@ -1,0 +1,96 @@
+<div class="d-flex w-100 justify-content-around mt-3">
+    <div>
+        <button class="btn btn-primary">Create Event</button>
+    </div>
+    <div>
+        <button class="btn btn-primary">Create Event</button>
+    </div>
+    <div>
+        <button class="btn btn-primary">Create Event</button>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="row col-md-12">
+        <div *ngFor="let event of events" class="col-sm-12 col-md-6 col-lg-4 events">
+            <article class="blog_item shadow" style="border-radius: 5px; overflow: hidden;">
+                <div class="blog_item_img">
+                    <img class="card-img rounded-0" [src]="event.eventBanner" alt="">
+                </div>
+                <div class="event p-3 d-flex flex-row justify-content-between">
+                    <div>
+                        <a style="height: 3em; font-weight: bold; font-size: 16px;"
+                            class="color-blue hover-orange d-flex align-items-center">
+                            {{event.title}}
+                        </a>
+                        <button type="button" class="btn btn-secondary">{{event.buttonText}}</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+<div class="container mt-3">
+    <div class="row col-md-12">
+        <div *ngFor="let eventdata of events2" class="col-sm-12 col-md-6 col-lg-4 h-100 events2">
+            <article class="blog_item shadow" style="border-radius: 5px; overflow: hidden;">
+                <div class="blog_item_img">
+                    <img class="card-img rounded-0" [src]="eventdata.eventBanner" alt="">
+                </div>
+                <div class="event p-3 d-flex flex-row justify-content-between">
+                    <div>
+                        <a style="height: 3em; font-weight: bold; font-size: 16px;"
+                            class="color-blue hover-orange d-flex align-items-center">
+                            {{eventdata.title}}
+                        </a>
+                        <button type="button" class="btn btn-secondary">{{eventdata.buttonText}}</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row col-md-12 ">
+            <div *ngFor="let eventdata1 of event3" class="col-sm-12 col-md-6 col-lg-4 h-100 events2">
+                <article class="blog_item shadow" style="border-radius: 5px; overflow: hidden;">
+                    <div class="blog_item_img">
+                        <img class="card-img rounded-0 " [src]="eventdata1.eventBanner" height="200" alt="">
+                    </div>
+                    <div class="event p-3 d-flex flex-row justify-content-between">
+                        <div>
+                            <a style="height: 3em; font-weight: bold; font-size: 16px;"
+                                class="color-blue hover-orange d-flex align-items-center">
+                                {{eventdata1.title}}
+                            </a>
+                            <button type="button" class="btn btn-secondary">{{eventdata1.buttonText}}</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+              <hr>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                  <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+               <a href="#">DevenCode</a>.
+                  </p>
+                </div>
+        
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                  </ul>
+                </div>
+              </div>
+            </div>
+        <footer>
